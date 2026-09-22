@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Graduate&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwitcher+Grypen:wght@400;700&family=Waterfall&family=WindSong:wght@400;500&display=swap');
+.windsong-regular {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+
+.waterfall-regular {
+  font-family: "Waterfall", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.birthstone-bounce-regular {
+  font-family: "Birthstone Bounce", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.birthstone-bounce-medium {
+  font-family: "Birthstone Bounce", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+.qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.windsong-regular {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-display {
+  font-family: "Playfair Display SC", serif;
+}
+
+
+
+@import "tailwindcss";
