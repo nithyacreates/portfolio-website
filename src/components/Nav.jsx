@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import nithya from "../assets/nithya13.jpeg";
+import nithya from "../assets/protfolio-profile.jpeg";
 import Contact from "./Contact";
 import './nav.css'
 
@@ -159,15 +159,22 @@ useEffect(() => {
             {/* Hero Content */}
             <div className="animate-[fadeIn_1s_ease-out]">
 
-              
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight pt-20">
-
-                
-                <span className="block">
-                  Full Stack Developer
-                </span>
-
-              </h1>
+            <h1
+  className="
+    text-7xl
+    font-bold
+    bg-gradient-to-r
+    from-[#756BFF]
+    via-[#C58BFF]
+    to-[#FFB52E]
+    bg-[length:200%_100%]
+    bg-clip-text
+    text-transparent
+    animate-gradient
+  "
+>
+  Full Stack Developer
+</h1>
 
               <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
                 I build modern, responsive and user-friendly web applications
@@ -178,14 +185,14 @@ useEffect(() => {
               {/* Buttons */}
               <div className="mt-8 flex flex-wrap gap-4">
 
-                <a
-                  href="#projects"
-                  className="px-6 py-3 rounded-full bg-[#907DCD] text-[#080d21] font-semibold
-                             hover:scale-105 hover:shadow-[0_0_25px_rgba(234,255,106,0.3)]
-                             transition duration-300"
-                >
-                  View My Projects →
-                </a>
+               <a
+  href="#projects"
+  className="px-6 py-3 rounded-full bg-gradient-to-r from-[#756BFF] via-[#C58BFF] to-[#FFB52E] bg-[length:200%_100%] animate-gradient text-white font-semibold
+             hover:scale-105 hover:shadow-[0_0_25px_rgba(234,255,106,0.3)]
+             transition duration-300"
+>
+  View My Projects
+</a>
 
                 <a
                   href="/Nithya-CV.pdf"
@@ -202,7 +209,7 @@ useEffect(() => {
             </div>
 
 {/* Photo Area */}
-<div className="relative flex justify-center pt-20 pl-20">
+<div className="relative flex justify-center  pl-10">
 
  
 
@@ -232,177 +239,376 @@ useEffect(() => {
 
 
       {/* ================= ABOUT ================= */}
-     <section
+<section
   ref={(el) => (sections.current[1] = el)}
   id="about"
-  className="scroll-section scroll-left py-24 bg-gray-900"
+  className="scroll-section scroll-left bg-[#111827] py-24"
 >
-        <div className="max-w-6xl mx-auto px-6">
+  <div className="max-w-[1600px] mx-auto px-6">
 
-          <h2 className="text-5xl font-bold text-center">
-            WHO AM I <span className="text-[#7C3AED]">?</span>
-          </h2>
+    {/* ================= HEADING ================= */}
+    <div className="text-center">
 
-          <div className="max-w-3xl mx-auto mt-10 text-center">
+      <h2 className="text-5xl text-[#8B7CFF] md:text-5xl font-bold ">
+        About Me
+      </h2>
 
-            <p className="text-gray-400 text-lg leading-relaxed">
-              I am a passionate developer interested in building modern
-              websites and full-stack applications. I enjoy creating
-              responsive interfaces and solving real-world problems through
-              technology.
-            </p>
-
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              My main interests are frontend development, UI/UX,
-              Python development and full-stack web development.
-            </p>
-
-          </div>
-
-
-          {/* About Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mt-14">
-
-            <div className="p-7 rounded-2xl bg-white/5 border border-white/10 hover:border-[#7C3AED]/50 hover:-translate-y-2 transition duration-300">
-
-              <div className="text-4xl">
-                🐍
-              </div>
-
-              <h3 className="mt-5 text-xl font-semibold">
-                Python Developer
-              </h3>
-
-              <p className="mt-3 text-gray-400">
-                Building applications and APIs using Python.
-              </p>
-
-            </div>
-
-
-            <div className="p-7 rounded-2xl bg-white/5 border border-white/10 hover:border-[#7C3AED]/50 hover:-translate-y-2 transition duration-300">
-
-              <div className="text-4xl">
-                ⚛️
-              </div>
-
-              <h3 className="mt-5 text-xl font-semibold">
-                Frontend Developer
-              </h3>
-
-              <p className="mt-3 text-gray-400">
-                Creating responsive interfaces using React.
-              </p>
-
-            </div>
-
-
-            <div className="p-7 rounded-2xl bg-white/5 border border-white/10 hover:border-[#7C3AED]/50 hover:-translate-y-2 transition duration-300">
-
-              <div className="text-4xl">
-                🎨
-              </div>
-
-              <h3 className="mt-5 text-xl font-semibold">
-                UI / UX
-              </h3>
-
-              <p className="mt-3 text-gray-400">
-                Designing clean and engaging user experiences.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= SKILLS ================= */}
-    <section
-  ref={(el) => (sections.current[2] = el)}
-  id="skills"
-  className="scroll-section scroll-zoom py-24"
->
-
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-5xl font-bold text-center">
-            MY <span className="text-[#7C3AED]">SKILLS</span>
-          </h2>
-        
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-14">
-
-  {[
-    ["devicon-python-plain", "Python"],
-    ["devicon-react-original", "React"],
-    ["devicon-javascript-plain", "JavaScript"],
-    ["devicon-html5-plain", "HTML"],
-    ["devicon-css3-plain", "CSS"],
-    ["devicon-nodejs-plain", "Node.js"],
-    ["devicon-mongodb-plain", "MongoDB"],
-    ["devicon-git-plain", "Git"],
-  ].map(([icon, skill]) => (
-
-    <div
-      key={skill}
-      className="h-40 rounded-2xl
-                 bg-[#11182f]
-                 border border-white/10
-                 flex flex-col items-center justify-center
-                 hover:scale-110
-                 hover:z-[99]
-                 hover:shadow-[0_10px_40px_rgba(234,255,106,0.08)]
-                 transition duration-300
-                 transition-transform
-                 duration-300
-                 ease-[cubic-bezier(0.25,1,0.5,1)]"
-                 
-    >
-
-      <div className="text-5xl text-[#7C3AED]">
-        <i className={`${icon} colored`}></i>
-      </div>
-
-      <p className="mt-4 text-gray-300">
-        {skill}
+      <p className="
+        max-w-4xl
+        mx-auto
+        mt-5
+        text-lg
+        leading-relaxed
+        text-gray-300
+      ">
+        I am a passionate developer interested in building modern
+        websites and full-stack applications. I enjoy creating
+        responsive interfaces and solving real-world problems through
+        technology.
       </p>
 
     </div>
 
-  ))}
+
+   
+   {/* ================= ABOUT CARDS ================= */}
+<div className="
+
+  flex
+  flex-wrap
+  justify-center
+  gap-6
+  mt-16
+
+">
+
+  {/* Card 1 */}
+  <div className="
+    w-[290px]
+    h-[216px]
+    rounded-2xl
+    bg-[#172033]
+    border border-[#29364d]
+    p-6
+    transition duration-300
+    hover:border-[#7C3AED]
+  ">
+
+    <div className="
+      w-12
+      h-12
+      rounded-xl
+      bg-[#29275f]
+      flex
+      items-center
+      justify-center
+      text-[#8B7CFF]
+      text-2xl
+    ">
+      <i className="ri-code-s-slash-line"></i>
+    </div>
+
+    <h3 className="
+      mt-5
+      text-xl
+      font-semibold
+      text-white
+    ">
+      Clean Code
+    </h3>
+
+    <p className="
+      mt-2
+      text-sm
+      leading-6
+      text-gray-400
+    ">
+      Writing maintainable, scalable, and well-documented code.
+    </p>
+
+  </div>
+
+
+  {/* Card 2 */}
+  <div className="
+    w-[290px]
+    h-[216px]
+    rounded-2xl
+    bg-[#172033]
+    border border-[#29364d]
+    p-6
+    transition duration-300
+    hover:border-[#7C3AED]
+  ">
+
+    <div className="
+      w-12
+      h-12
+      rounded-xl
+      bg-[#29275f]
+      flex
+      items-center
+      justify-center
+      text-[#8B7CFF]
+      text-2xl
+    ">
+      <i className="ri-flashlight-line"></i>
+    </div>
+
+    <h3 className="
+      mt-5
+      text-xl
+      font-semibold
+      text-white
+    ">
+      Performance
+    </h3>
+
+    <p className="
+      mt-2
+      text-sm
+      leading-6
+      text-gray-400
+    ">
+      Optimizing applications for speed and efficiency.
+    </p>
+
+  </div>
+
+
+  {/* Card 3 */}
+  <div className="
+    w-[290px]
+    h-[216px]
+    rounded-2xl
+    bg-[#172033]
+    border border-[#29364d]
+    p-6
+    transition duration-300
+    hover:border-[#7C3AED]
+  ">
+
+    <div className="
+      w-12
+      h-12
+      rounded-xl
+      bg-[#29275f]
+      flex
+      items-center
+      justify-center
+      text-[#8B7CFF]
+      text-2xl
+    ">
+      <i className="ri-group-line"></i>
+    </div>
+
+    <h3 className="
+      mt-5
+      text-xl
+      font-semibold
+      text-white
+    ">
+      User-Centric
+    </h3>
+
+    <p className="
+      mt-2
+      text-sm
+      leading-6
+      text-gray-400
+    ">
+      Building intuitive experiences that solve real problems.
+    </p>
+
+  </div>
+
+
+  {/* Card 4 */}
+  <div className="
+    w-[290px]
+    h-[216px]
+    rounded-2xl
+    bg-[#172033]
+    border border-[#29364d]
+    p-6
+    transition duration-300
+    hover:border-[#7C3AED]
+  ">
+
+    <div className="
+      w-12
+      h-12
+      rounded-xl
+      bg-[#29275f]
+      flex
+      items-center
+      justify-center
+      text-[#8B7CFF]
+      text-2xl
+    ">
+      <i className="ri-rocket-line"></i>
+    </div>
+
+    <h3 className="
+      mt-5
+      text-xl
+      font-semibold
+      text-white
+    ">
+      Innovation
+    </h3>
+
+    <p className="
+      mt-2
+      text-sm
+      leading-6
+      text-gray-400
+    ">
+      Exploring modern technologies and development practices.
+    </p>
+
+  </div>
 
 </div>
 
-          {/* Experience Number */}
-          <div className="mt-10 p-10 rounded-2xl bg-[#11182f] border border-white/10 text-center">
+  </div>
+</section>
+    
+   {/* ================= SKILLS ================= */}
+<section
+  ref={(el) => (sections.current[2] = el)}
+  id="skills"
+  className="scroll-section scroll-zoom bg-gray-900 py-24"
+>
+  <div className="max-w-6xl mx-auto px-6">
 
-            <p className="text-6xl font-bold text-[#7C3AED]">
-              1+
-            </p>
+    {/* Heading */}
+    <div className="text-center">
 
-            <p className="mt-3 text-2xl font-semibold">
-              Years Learning & Experience
-            </p>
+      <h2 className="text-5xl md:text-5xl font-bold text-[#9B8AFB]">
+        Technical Skills
+      </h2>
 
-            <a
-              href="/Nithya-CV.pdf"
-              download
-              className="inline-block mt-6 px-7 py-3 rounded-full
-                         bg-[#7C3AED] text-[#080d21]
-                         font-semibold hover:scale-105 transition"
-            >
-              DOWNLOAD MY CV
-            </a>
+      <p className="mt-3 text-lg text-gray-300">
+        Technologies and tools I use to build modern web applications
+      </p>
 
-          </div>
+    </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-15">
+  {/* Frontend */}
+  <div className="bg-[#172033] border border-[#29364d] rounded-2xl p-8">
+    <h3 className="text-2xl font-semibold text-white">
+      Frontend
+    </h3>
 
+    <p className="mt-2 text-gray-400 text-sm">
+      Building responsive and user-friendly interfaces.
+    </p>
+
+    <div className="mt-7 flex flex-wrap gap-4">
+      {[
+        ["devicon-html5-plain colored", "HTML"],
+        ["devicon-css3-plain colored", "CSS"],
+        ["devicon-javascript-plain colored", "JavaScript"],
+        ["devicon-react-original colored", "React"],
+        ["devicon-bootstrap-plain colored", "Bootstrap"],
+        ["devicon-tailwindcss-original colored", "Tailwind CSS"],
+      ].map(([icon, skill]) => (
+        <div
+          key={skill}
+          title={skill}
+          className="
+            w-12 h-12
+            flex items-center justify-center
+            bg-[#111827]
+            border border-[#29364d]
+            rounded-full
+            shadow-lg
+            transition-transform hover:scale-110
+          "
+        >
+          <i className={`${icon} text-2xl`}></i>
         </div>
+      ))}
+    </div>
+  </div>
 
-      </section>
+  {/* Backend */}
+  <div className="bg-[#172033] border border-[#29364d] rounded-2xl p-8">
+    <h3 className="text-2xl font-semibold text-white">
+      Backend
+    </h3>
+
+    <p className="mt-2 text-gray-400 text-sm">
+      Developing APIs and server-side applications.
+    </p>
+
+    <div className="mt-7 flex flex-wrap gap-4">
+      {[
+        ["devicon-nodejs-plain colored", "Node.js"],
+        ["devicon-express-original", "Express.js"],
+        ["devicon-python-plain colored", "Python"],
+        ["devicon-flask-original", "Flask"],
+      ].map(([icon, skill]) => (
+        <div
+          key={skill}
+          title={skill}
+          className="
+            w-12 h-12
+            flex items-center justify-center
+            bg-[#111827]
+            border border-[#29364d]
+            rounded-full
+            shadow-lg
+            transition-transform hover:scale-110
+          "
+        >
+          <i className={`${icon} text-2xl`}></i>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Database & Tools */}
+  <div className="bg-[#172033] border border-[#29364d] rounded-2xl p-8">
+    <h3 className="text-2xl font-semibold text-white">
+      Database & Tools
+    </h3>
+
+    <p className="mt-2 text-gray-400 text-sm">
+      Managing data and development workflows.
+    </p>
+
+    <div className="mt-7 flex flex-wrap gap-4">
+      {[
+        ["devicon-mongodb-plain colored", "MongoDB"],
+        ["devicon-mysql-plain colored", "SQL"],
+        ["devicon-git-plain colored", "Git"],
+        ["devicon-github-original", "GitHub"],
+        ["devicon-vscode-plain colored", "VS Code"],
+      ].map(([icon, skill]) => (
+        <div
+          key={skill}
+          title={skill}
+          className="
+            w-12 h-12
+            flex items-center justify-center
+            bg-[#111827]
+            border border-[#29364d]
+            rounded-full
+            shadow-lg
+            transition-transform hover:scale-110
+          "
+        >
+          <i className={`${icon} text-2xl`}></i>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
 
 {/* ================= EXPERIENCE ================= */}
 <section
@@ -414,11 +620,10 @@ useEffect(() => {
 
     {/* ================= HEADING ================= */}
     <div className="mb-16 text-center">
-      <h2 className="text-5xl font-bold text-gray-900 md:text-6xl">
-        MY{" "}
-        <span className="text-[#7C3AED]">
-          EXPERIENCE
-        </span>
+      <h2 className="text-5xl font-bold text-5xl text-[#8B7CFF]">
+    
+        MY EXPERIENCE
+       
       </h2>
     </div>
 
@@ -490,136 +695,220 @@ useEffect(() => {
   className="scroll-section scroll-up py-24"
 >
 
-        <div className="max-w-6xl mx-auto px-6">
+   
+<div className="max-w-5xl mx-auto ">
 
-          <h2 className="text-5xl font-bold text-center">
-            MY <span className="text-[#7C3AED]">PROJECTS</span>
-          </h2>
-
-
-          <div className="grid md:grid-cols-2 gap-7 mt-14">
-
-
-            {/* Project 1 */}
-            <div
-              className="group p-8 rounded-2xl
-                         bg-[#e5e5e5]
-                         border border-white/10
-                         hover:-translate-y-2
-                         transition duration-500"
-            >
-
-              <div className="flex justify-between">
-
-                <span className="text-[#7C3AED] text-3xl font-bold">
-                  01
-                </span>
-
-                 <span className="text-gray-500 group-hover:text-[#907DCD] transition text-xl">
-  <i className="ri-eye-line"></i>
-</span>
-
-              </div>
+  {/* Projects Heading */}
+  <h2 className="text-5xl font-bold text-center text-5xl text-[#8B7CFF]">
+    Featured Projects
+  </h2>
 
 
-              <h3 className="mt-8 text-2xl font-semibold">
-                AI Text Converter
-              </h3>
-
-              <p className="mt-4 text-gray-400 leading-relaxed">
-                A web application that uses AI to transform and process
-                text based on different requirements.
-              </p>
+  {/* Projects */}
+  <div className="grid md:grid-cols-2 gap-8 mt-14">
 
 
-              <div className="mt-6 flex flex-wrap gap-2">
+    {/* ================= PROJECT 1 ================= */}
+    <div
+      className="
+        group
+        p-8
+        rounded-3xl
+        bg-[#172033]
+        border border-[#29364d]
+        hover:-translate-y-2
+        transition-all duration-300
+       
+      "
+    >
 
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                  Python
-                </span>
-
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                  React
-                </span>
-
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                  AI
-                </span>
-
-              </div>
-
-
-              <a
-                href="#"
-                className="inline-block mt-7 text-[#907DCD] hover:underline"
-              >
-                GitHub 
-              </a>
-
-            </div>
-
-
-            {/* Project 2 */}
-            <div
-              className="group p-8 rounded-2xl
-                         bg-[#e5e5e5]
-                         border border-white/10
-                         hover:-translate-y-2
-                         transition duration-500"
-            >
-
-              <div className="flex justify-between">
-
-                <span className="text-[#7C3AED] text-3xl font-bold">
-                  02
-                </span>
-
-                <span className="text-gray-500 group-hover:text-[#7C3AED] transition text-xl">
-  <i className="ri-eye-line"></i>
-</span>
-
-              </div>
+      {/* Top */}
+      
+      {/* Title */}
+      <h3 className="
+        mt-6
+        text-3xl
+        font-bold
+        text-white
+        pl-6
+      ">
+        AI Text Converter
+      </h3>
 
 
-              <h3 className="mt-8 text-2xl font-semibold">
-                Result Publishing System
-              </h3>
-
-              <p className="mt-4 text-gray-400 leading-relaxed">
-                A web application designed to manage and publish student
-                examination results efficiently.
-              </p>
-
-
-              <div className="mt-6 flex flex-wrap gap-2">
-
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                  Python
-                </span>
-
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                  SQL
-                </span>
-
-                <span className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                  JavaScript
-                </span>
-
-              </div>
+      {/* Description */}
+      <p className="
+        mt-5
+        text-gray-400
+        text-base
+        pl-6
+        leading-relaxed
+      ">
+        A web application that uses AI to transform and process
+        text based on different requirements. It provides users
+        with an efficient way to modify and generate text using
+        AI-powered features.
+      </p>
 
 
-              <a
-                href="#"
-                className="inline-block mt-7 text-[#7C3AED] hover:underline"
-              >
-                GitHub 
-              </a>
+      {/* Code + Demo */}
+      <div className="flex pl-6 gap-3 mt-7">
 
-            </div>
+        {/* Code */}
+        <a
+          href="#"
+          className="
+            w-1/2
+            h-10
+            flex
+            items-center
+            justify-center
+            gap-2
+            rounded-lg
+            bg-white
+            text-[#6366F1]
+            text-sm
+            hover:bg-gray-100
+            transition-all
+          "
+        >
+          <i className="ri-github-line text-lg "></i>
+          Code
+        </a>
 
-          </div>
 
-        </div>
+        {/* Demo */}
+        <a
+          href="#"
+          className="
+            w-1/2
+            h-10
+            flex
+            items-center
+            justify-center
+            gap-2
+            rounded-lg
+            bg-gradient-to-r
+            from-[#4F46E5]
+            to-[#7C3AED]
+            text-white
+            text-sm
+            hover:opacity-90
+            transition-all
+          "
+        >
+          <i className="ri-external-link-line text-lg"></i>
+          Demo
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    {/* ================= PROJECT 2 ================= */}
+    <div
+      className="
+        group
+        p-8
+        rounded-3xl
+        bg-[#172033]
+        border border-[#29364d]
+        hover:-translate-y-2
+        transition-all duration-300
+       
+      "
+    >
+
+      {/* Top */}
+     
+
+
+      {/* Title */}
+      <h3 className="
+        mt-6
+        text-3xl
+        font-bold
+        text-white
+        text-center
+      ">
+        Result Publishing System
+      </h3>
+
+
+      {/* Description */}
+      <p className="
+        mt-5
+        text-gray-400
+        text-base
+        leading-relaxed
+        pl-6
+      ">
+        A web application designed to manage and publish student
+        examination results efficiently. It helps organize student
+        data and makes result publishing faster and easier.
+      </p>
+
+
+      {/* Code + Demo */}
+      <div className="flex gap-3 mt-7 pl-6">
+
+        {/* Code */}
+        <a
+          href="#"
+          className="
+            w-1/2 
+            h-10
+            flex
+            items-center
+            justify-center
+            gap-2
+            rounded-lg
+            bg-white
+            text-[#6366F1]
+            text-sm
+           
+            hover:bg-gray-100
+            transition-all
+          "
+        >
+          <i className="ri-github-line text-lg"></i>
+          Code
+        </a>
+
+
+        {/* Demo */}
+        <a
+          href="#"
+          className="
+            w-1/2
+            h-10
+            flex
+            items-center
+            justify-center
+            gap-2
+            rounded-lg
+            bg-gradient-to-r
+            from-[#4F46E5]
+            to-[#7C3AED]
+            text-white
+            text-sm
+            hover:opacity-90
+            transition-all
+          "
+        >
+          <i className="ri-external-link-line text-lg"></i>
+          Demo
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
       </section>
 
